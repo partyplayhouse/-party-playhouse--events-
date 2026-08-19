@@ -1,5 +1,15 @@
-# Party Playhouse & Events Website — Version 2
+# Party Playhouse & Events Website — Version 4
 
-This revision adds broader brand positioning, individual experiences, date nights/classes/special events, personalized invitations included with private parties, November pre-booking messaging, Facebook links, simplified add-ons, and launch promotions.
-
-Square booking/payment links are still placeholders until the live Square URLs are available.
+Includes:
+- Full private-party timelines
+- Correct room flow for Splatter, Slime, and Cake
+- No cake size specified
+- Open-session pricing: Slime $25/person, Glow Splatter $25/person, Cake Decorating $30/person
+- Inclusive kids/teens/adults/date-night imagery
+- Paint Splatter waiver page and links
+- Personalized invitation included with private parties
+- Simplified add-ons (no balloon garland or T-shirts)
+- $25 Opening Supporter offer for $55 off
+- Book-with-a-friend promotion
+- Facebook and Springfield location messaging
+- November pre-booking placeholder for Square
