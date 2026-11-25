@@ -1,348 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Party Playhouse & Events in Springfield, Missouri — glow paint splatter, slime parties, cake decorating, and unforgettable kids' celebrations." />
-  <title>Party Playhouse & Events</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Upcoming mobile event rentals and guestbook experiences in Springfield, Missouri.">
+
+<title>Party Playhouse &amp; Events | Signature Event Rentals</title>
+
+<style>
+
+:root{--ink:#33372f;--paper:#f8f5ef;--sage:#929b87;--sand:#e8ded0;--gold:#85745e}
+
+*{box-sizing:border-box}
+
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,sans-serif}
+
+h1,h2,h3,.brand{font-family:Georgia,serif;font-weight:400;line-height:1.15}
+
+h1{font-size:clamp(3rem,7vw,6rem);margin:.4em 0}
+
+h2{font-size:clamp(2rem,4vw,3rem)}
+
+h3{font-size:1.65rem}
+
+header,section,footer{padding:clamp(24px,6vw,80px)}
+
+header{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-block:24px;border-bottom:1px solid #d8cabb}
+
+.brand{font-size:1.35rem;letter-spacing:.06em}
+
+small,.eyebrow{letter-spacing:.15em;text-transform:uppercase;font-size:.72rem;color:var(--gold)}
+
+nav{display:flex;gap:20px;flex-wrap:wrap}
+
+a{color:inherit}
+
+nav a{text-decoration:none}
+
+.hero{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:5vw}
+
+.art{background:var(--sand);border-radius:48% 48% 3px 3px;min-height:330px;display:grid;place-items:center;padding:25px}
+
+.art svg{width:min(80%,260px);height:auto}
+
+.button,button{display:inline-block;background:var(--ink);color:white;padding:14px 22px;text-decoration:none;border:0;font:inherit;cursor:pointer}
+
+.collection{background:#fffdf9}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+
+.tile{border:1px solid #d8cabb;padding:30px}
+
+.tile .number{font:3rem Georgia;color:var(--sage)}
+
+.occasions{text-align:center;background:var(--sand)}
+
+.interest{max-width:850px;margin:auto}
+
+form{display:grid;gap:14px}
+
+label{display:grid;gap:5px}
+
+input,select,textarea{font:inherit;padding:12px;border:1px solid #a99e8d;background:white;color:var(--ink);width:100%}
+
+button:disabled{opacity:.6;cursor:not-allowed}
+
+footer{border-top:1px solid #d8cabb}
+
+@media(max-width:650px){
+
+.hero,.grid{grid-template-columns:1fr}
+
+.art{min-height:260px}
+
+}
+
+</style>
+
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">
-      <img src="assets/logo.jpg" alt="Party Playhouse & Events logo" />
-      <span>Party Playhouse & Events</span>
-    </a>
-    <nav>
-      <a href="#parties">Parties</a>
-      <a href="#specials">Specials</a>
-      <a href="#addons">Add-Ons</a>
-      <a href="#faq">FAQ</a>
-      <a class="nav-cta" href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">Book Now</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">Springfield, Missouri</span>
-        <h1>Create. Celebrate. Make a mess.</h1>
-        <p><strong>Birthday parties are just the beginning.</strong> From glow paint battles and slime-making to cake decorating, date nights, creative classes and private celebrations, Party Playhouse & Events is Springfield's colorful place to create, celebrate and make memories.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#parties">Explore Private Parties</a>
-          <a class="btn btn-secondary" href="#experiences">Explore Experiences</a>
-        </div>
-        <div class="hero-pills">
-          <span>✨ Interactive Activities</span>
-          <span>📸 Photo Room Access</span>
-          <span>🍋 Lemonade & Water</span>
-          <span>🎈 You Bring the Fun</span>
-        </div>
-      </div>
-      <div class="hero-art">
-        <img src="assets/logo.jpg" alt="Party Playhouse & Events" />
-      </div>
-    </section>
+<header>
 
-    <section id="parties" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">Private Parties & Celebrations</span>
-        <h2>Choose your party adventure</h2>
-        <p>Every private party includes your selected creative experience, celebration time, photo room access, setup and cleanup, ice water, fresh lemonade, cups, plates, napkins, standard party décor, and a personalized Party Playhouse invitation you can print or share digitally.</p>
-      </div>
+<div class="brand">
 
-      <div class="cards three">
-        <article class="party-card splatter">
-          <img src="assets/glow-room.jpg" alt="Neon glow paint splatter room" />
-          <div class="card-body">
-            <span class="tag">90 Minutes</span>
-            <h3>Splatter Bash</h3>
-            <p class="subtitle">Glow Paint Battle Party</p>
-            <div class="price-row"><strong>$300</strong><span>up to 10 guests</span></div>
-            <div class="price-row"><strong>Ask us</strong><span>larger groups subject to room capacity</span></div>
-            <div class="timeline">
-              <h4>Your 90-Minute Party Experience</h4>
-              <p><strong>🎨 First 30–40 Minutes — Glow Paint Splatter</strong><br>Suit up and head into the glow room for paint splattering, paint guns, targets and colorful messy fun.</p>
-              <p><strong>🎂 Remaining 50–60 Minutes — Private Celebration Room</strong><br>Move into the private celebration room just off the splatter area for food, cake, presents and celebrating.</p>
-            </div>
-            <ul>
-              <li>Protective gear & paint experience</li>
-              <li>Photo room access</li>
-              <li>Personalized printable/digital invitation</li>
-              <li>Standard party décor, setup & cleanup</li>
-              <li>Ice water, lemonade, cups, plates & napkins</li>
-            </ul>
-            <p class="mini-note">🍕 Pizza available upon request as an add-on. Outside food is welcome.</p>
-            <a class="waiver-link" href="waiver.html">📝 Paint Splatter Waiver Required</a>
-            <a class="btn btn-card" href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">Book Splatter Bash</a>
-          </div>
-        </article>
+PARTY PLAYHOUSE &amp; EVENTS
 
-        <article class="party-card slime">
-          <img src="assets/slime-inclusive.png" alt="Kids, teens and adults making colorful slime together">
-          <div class="card-body">
-            <span class="tag">90 Minutes</span>
-            <h3>Slime Time</h3>
-            <p class="subtitle">Slime Lab Party</p>
-            <div class="price-row"><strong>$300</strong><span>up to 10 guests</span></div>
-            <div class="price-row"><strong>Ask us</strong><span>larger groups subject to room capacity</span></div>
-            <div class="timeline">
-              <h4>Your 90-Minute Party Experience</h4>
-              <p><strong>🧪 First 30–40 Minutes — Slime Making</strong><br>Choose colors, scents, glitter and charms, then mix and customize your own slime.</p>
-              <p><strong>🎉 Remaining 50–60 Minutes — Celebration Time</strong><br>Stay right in the Slime Lab as the room transitions into your celebration space for food, cake, presents and time together.</p>
-            </div>
-            <ul>
-              <li>Slime container & premium mix-ins</li>
-              <li>Photo room access</li>
-              <li>Personalized printable/digital invitation</li>
-              <li>Standard party décor, setup & cleanup</li>
-              <li>Ice water, lemonade, cups, plates & napkins</li>
-            </ul>
-            <p class="mini-note">Upgrade to fluffy slime or air clay for +$3 per child.</p>
-            <a class="btn btn-card" href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">Book Slime Time</a>
-          </div>
-        </article>
+<br>
 
-        <article class="party-card cake">
-          <img src="assets/cake-inclusive.png" alt="Kids, teens and adults decorating colorful cakes together">
-          <div class="card-body">
-            <span class="tag">2 Hours</span>
-            <h3>Cake Craze</h3>
-            <p class="subtitle">Cake Decorating Party</p>
-            <div class="price-row"><strong>$350</strong><span>up to 10 guests</span></div>
-            <div class="price-row"><strong>Ask us</strong><span>larger groups subject to room capacity</span></div>
-            <div class="timeline">
-              <h4>Your 2-Hour Party Experience</h4>
-              <p><strong>🎂 About 60 Minutes — Cake Decorating</strong><br>Each guest receives their own cake to decorate with frosting, colors and decorations.</p>
-              <p><strong>🎉 About 60 Minutes — Celebration Time</strong><br>Stay right in the Cake Decorating Room for food, presents, photos and celebrating. Guests box up their finished creations to take home.</p>
-            </div>
-            <ul>
-              <li>Individual cake for every guest</li>
-              <li>Frosting, decorations & take-home cake box</li>
-              <li>Photo room access</li>
-              <li>Personalized printable/digital invitation</li>
-              <li>Standard party décor, setup & cleanup</li>
-              <li>Ice water, lemonade, cups, plates & napkins</li>
-            </ul>
-            <a class="btn btn-card" href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">Book Cake Craze</a>
-          </div>
-        </article>
-      </div>
-      <p class="image-note">Cake-party photography can be swapped in here later with your own photos or clearly labeled promotional imagery.</p>
-    </section>
+<small>Signature event rentals &amp; experiences</small>
 
+</div>
 
-    <section id="experiences" class="section experiences">
-      <div class="section-heading">
-        <span class="eyebrow">Not Just Birthday Parties</span>
-        <h2>Come create with us</h2>
-        <p>You don't need a birthday to enjoy Party Playhouse. Select weekday and evening sessions will be available for individuals, couples, friends and families.</p>
-      </div>
+<nav>
 
-      <div class="experience-grid">
-        <article>
-          <img src="assets/glow-teen-battle.png" alt="Teen glow paint battle">
-          <div class="exp-copy">
-            <div class="emoji">🎨</div>
-            <h3>Glow Splatter Sessions</h3>
-            <p>Grab a friend, date or group and step into the glow room for a colorful paint-splatter experience.</p>
-            <span>$30 per person</span>
-          </div>
-        </article>
-        <article>
-          <img src="assets/slime-inclusive.png" alt="Kids, teens and adults making slime together">
-          <div class="exp-copy">
-            <div class="emoji">🧪</div>
-            <h3>Slime Sessions</h3>
-            <p>Mix, stretch and customize your own slime with colors, scents, charms and fun mix-ins.</p>
-            <span>$25 per person</span>
-          </div>
-        </article>
-        <article>
-          <img src="assets/cake-inclusive.png" alt="Kids, teens and adults decorating cakes together">
-          <div class="exp-copy">
-            <div class="emoji">🎂</div>
-            <h3>Cake Decorating</h3>
-            <p>Decorate your own cake during scheduled creative sessions—perfect for friends, families or a fun night out.</p>
-            <span>$45 per person</span>
-          </div>
-        </article>
-      </div>
+<a href="#collection">Experiences</a>
 
-      <p class="session-note"><strong>Open sessions:</strong> Offered on select weekdays and evenings and subject to minimum enrollment. Individual guests may reserve one or more spots.</p>
+<a href="#occasions">Occasions</a>
 
-      <div class="after-hours">
-        <div class="after-hours-copy">
-          <span class="eyebrow">After Hours at Party Playhouse</span>
-          <h3>Date nights, creative nights & special events</h3>
-          <p>Couples cake decorating dates are $80 per couple. Explore creative nights, girls’ nights, parent-and-child activities and other special experiences as dates become available.</p>
-        </div>
-        <div class="after-hours-images">
-          <img src="assets/cake-date-night.png" alt="Couple decorating a cake on date night">
-          <img src="assets/glow-teen-group.png" alt="Teen friends enjoying a glow paint battle">
-        </div>
-      </div>
-    </section>
+<a href="#interest">Early access</a>
 
-    <section id="specials" class="section specials">
-      <div class="section-heading">
-        <span class="eyebrow">Grand Opening Specials</span>
-        <h2>Support us before opening & save on your celebration</h2>
-        <p>These offers are designed for early supporters and future party bookings.</p>
-      </div>
+</nav>
 
-      <div class="cards two">
-        <article class="special-card featured">
-          <span class="ribbon">Opening Supporter</span>
-          <h3>Pay $25</h3>
-          <div class="mega">Get $55 OFF</div>
-          <p>a future qualifying Party Playhouse party.</p>
-          <a class="btn btn-primary" href="https://square.link/u/4MKck9bJ" target="_blank" rel="noopener">Purchase Opening Supporter Special</a>
-        </article>
-      </div>
+</header>
 
-      <div class="terms">
-        <strong>Offer terms:</strong> Purchase for $25 and receive a one-time $55 discount toward a qualifying Party Playhouse & Events party booked within 12 months after our grand opening. Pay the standard 50% booking deposit when reserving your party. After we verify your supporter purchase, the $55 discount will be deducted from your remaining party balance. One offer per party; cannot be combined with other promotions. Not redeemable for cash. Contact us with your purchase confirmation before your party to arrange redemption.
-      </div>
-    </section>
-<section id="sponsors" class="section" style="text-align:center;">
-  <div class="section-heading">
-    <span class="eyebrow">Our Amazing Sponsors 💗</span>
-    <h2>Meet Our Founding Sponsor!</h2>
-    <p>Big dreams are made possible by people who believe in them.</p>
-  </div>
-  <div style="max-width:550px;margin:25px auto;padding:30px 20px;background:#fff;border:2px solid #f5c2e3;border-radius:20px;box-shadow:0 8px 25px rgba(90,30,110,0.08);">
-    <span class="ribbon">Founding Sponsor</span>
-    <img src="assets/IMG_8819.png" alt="Kelsey McQuerter Realtor with AMAX Real Estate" style="display:block;width:100%;max-width:320px;height:auto;margin:20px auto;border-radius:12px;">
-    <h3>Kelsey McQuerter, Realtor®</h3>
-    <p><strong>AMAX Real Estate</strong></p>
-    <p>We're incredibly grateful to Kelsey for believing in Party Playhouse &amp; Events from the very beginning! Her generosity and support have helped bring our dream one step closer to reality.</p>
-    <p><strong>Thank you, Kelsey, for being part of our story! 💕</strong></p>
-  </div>
-  <p>Interested in becoming a sponsor? We'd love to connect with you!</p>
+<main>
+
+<section class="hero">
+
+<div>
+
+<p class="eyebrow">Springfield, Missouri &amp; the Ozarks</p>
+
+<h1>Life’s moments deserve to be remembered.</h1>
+
+<p>Thoughtfully curated mobile event rentals and interactive experiences designed to turn meaningful moments into lasting memories.</p>
+
+<a class="button" href="#interest">Explore early access</a>
+
+</div>
+
+<div class="art">
+
+<svg viewBox="0 0 220 320" role="img" aria-label="Illustrative concept of a vintage telephone booth" fill="none" stroke="#85745e" stroke-width="3">
+
+<path d="M30 300V55Q110 -15 190 55V300Z"/>
+
+<path d="M42 65H178V92H42ZM48 105H172V288H48Z M110 105V288 M48 160H172 M48 225H172"/>
+
+<rect x="70" y="172" width="80" height="39" rx="8" fill="#f8f5ef"/>
+
+<path d="M82 182Q110 166 138 182L132 195L119 190H101L88 195Z" fill="#85745e"/>
+
+<text x="110" y="83" text-anchor="middle" fill="#85745e" stroke="none" font-size="12" letter-spacing="2">MEMORIES</text>
+
+</svg>
+
+<small>Illustrative concept</small>
+
+</div>
+
 </section>
 
-    <section id="support" class="section specials">
-  <div class="section-heading">
-    <span class="eyebrow">Support a Springfield Small Business 💗</span>
-    <h2>Help Us Bring Party Playhouse to Life!</h2>
-    <p>Big dreams sometimes come with unexpected challenges! When we started this journey, our goal was to create a fun, colorful space for families to celebrate and make unforgettable memories.</p>
-    <p>Unexpected construction costs, permitting expenses, and opening delays have stretched our original budget. We've made incredible progress, and we're determined to see this dream through!</p>
-    <p>We're in the final stretch! If you'd like to help with our remaining opening expenses and finishing touches, every contribution is deeply appreciated. There's absolutely no obligation to give — sharing our business means the world to us, too!</p>
-  </div>
-  <div class="special-card featured" style="max-width:650px;margin:24px auto;text-align:center;">
-    <span class="ribbon">Support Our Dream 💕</span>
-    <h3>Every Little Bit Helps!</h3>
-    <p>Suggested contributions:</p>
-    <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0;">
-      <a class="btn btn-secondary" href="https://square.link/u/DLxRsQel" target="_blank" rel="noopener">$5</a>
-      <a class="btn btn-secondary" href="https://square.link/u/DLxRsQel" target="_blank" rel="noopener">$10</a>
-      <a class="btn btn-secondary" href="https://square.link/u/DLxRsQel" target="_blank" rel="noopener">$25</a>
-      <a class="btn btn-secondary" href="https://square.link/u/DLxRsQel" target="_blank" rel="noopener">$50</a>
-    </div>
-    <p>Choose any amount at checkout, including more!</p>
-    <a class="btn btn-primary" href="https://square.link/u/DLxRsQel" target="_blank" rel="noopener">💗 Support Our Dream — Give Any Amount</a>
-    <p style="font-size:0.8rem;margin-top:16px;">Voluntary contributions support a for-profit business, are not tax-deductible charitable gifts, and do not include a party booking or discount.</p>
-  </div>
+<section id="collection" class="collection">
+
+<p class="eyebrow">Our upcoming collection</p>
+
+<h2>Beyond the ordinary.</h2>
+
+<div class="grid">
+
+<article class="tile">
+
+<span class="number">01</span>
+
+<p class="eyebrow">Upcoming signature experience</p>
+
+<h3>The Memory Booth</h3>
+
+<p>A vintage-inspired audio and video guestbook booth designed to capture heartfelt messages, stories and laughter. Preserve the voices and memories of the people you love for generations to come.</p>
+
+</article>
+
+<article class="tile">
+
+<span class="number">02</span>
+
+<p class="eyebrow">Upcoming rental</p>
+
+<h3>After the Tone</h3>
+
+<p>A nostalgic standalone audio guestbook for heartfelt messages, marriage advice, laughter and unforgettable memories.</p>
+
+</article>
+
+<article class="tile">
+
+<span class="number">03</span>
+
+<p class="eyebrow">Coming soon</p>
+
+<h3>The 360 Experience</h3>
+
+<p>Interactive video entertainment designed to bring energy, excitement and shareable memories to your celebration.</p>
+
+</article>
+
+<article class="tile">
+
+<span class="number">04</span>
+
+<p class="eyebrow">Coming soon</p>
+
+<h3>The Signature Collection</h3>
+
+<p>Beautifully curated statement arches, backdrops and decorative event rentals designed to elevate your special occasion.</p>
+
+</article>
+
+</div>
+
 </section>
 
-    <section class="section invitation">
-      <div class="invite-icon">💌</div>
-      <div>
-        <span class="eyebrow">Included With Every Private Party</span>
-        <h2>Your personalized Party Playhouse invitation</h2>
-        <p>After booking, we'll personalize a Party Playhouse invitation with your celebration details and email it to you. Print copies at home or share the digital version directly with your guests—it's included at no additional charge.</p>
-      </div>
-    </section>
+<section id="occasions" class="occasions">
 
-    <section id="addons" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">Make it extra</span>
-        <h2>Simple party add-ons</h2>
-      </div>
-      <div class="addon-grid">
-        <div><strong>🍕 Pizza</strong><span>2 large cheese pizzas — $35</span></div>
-        <div><strong>🏷️ Custom Slime Sticker</strong><span>$2 each</span></div>
-        <div><strong>🎨 Canvas for Paint Room (optional upgrade)</strong><span>$6 each</span></div>
-        <div><strong>☁️ Fluffy Slime / Air Clay Upgrade</strong><span>$3 per child</span></div>
-      </div>
-      <article class="friend-promo">
-        <strong>Book with a friend — you both save $50!</strong>
-        <span>Book parties at the same time for different birthday children and each qualifying party receives $50 off. Parties must be booked together and take place within 90 days of each other.</span>
-      </article>
-    </section>
+<p class="eyebrow">Celebrate · Connect · Remember</p>
 
-    <section class="section food">
-      <div>
-        <span class="eyebrow">Your party, your way</span>
-        <h2>Outside food, drinks & decorations welcome</h2>
-        <p>Bring your favorite food, cake, drinks, and decorations. Our rooms come decorated with standard party décor for a fun, festive vibe, and you're welcome to add your own touches.</p>
-      </div>
-      <img src="assets/coming-soon.jpg" alt="Party Playhouse coming soon promotional sign" />
-    </section>
+<h2>For every chapter of life.</h2>
 
+<p>Weddings · Birthdays · Anniversaries · Baby showers · Graduations · Corporate events · Funerals · Celebrations of life</p>
 
-    <section class="section prebook">
-      <span class="eyebrow">Opening Fall 2026</span>
-      <h2>Now accepting reservations for November 13 and beyond!</h2>
-      <p>Reserve your spot with a 50% deposit through our secure Square booking page. November 13 is our planned opening date, subject to final building readiness and approvals. If we cannot host your reservation due to an opening delay, you may choose a full refund or a new date.</p>
-      <a class="btn btn-primary" href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">Reserve Your Date</a>
-    </section>
+<p>From joyful celebrations to heartfelt remembrance, our vision is to help preserve the moments and voices that matter most.</p>
 
-    <section id="faq" class="section faq">
-      <div class="section-heading">
-        <span class="eyebrow">FAQ</span>
-        <h2>Good to know before you party</h2>
-      </div>
-      <details>
-        <summary>Can we bring outside food and decorations?</summary>
-        <p>Yes. Outside food, drinks, cake, and decorations are welcome. Standard party décor is included.</p>
-      </details>
-      <details>
-        <summary>What is included with every party?</summary>
-        <p>Ice water, fresh lemonade, cups, plates, napkins, standard décor, setup and cleanup, birthday celebration time, and photo room access.</p>
-      </details>
-      <details>
-        <summary>Where are you located?</summary>
-        <p>Our planned location is 838 S Glenstone Ave, Springfield, Missouri. Opening is subject to final approvals.</p>
-      </details>
-      <details>
-        <summary>Does the Paint Splatter Room require a waiver?</summary>
-        <p>Yes. Every Paint Splatter participant must have a completed waiver before entering the splatter room. <a href="waiver.html">View the Paint Splatter Waiver.</a></p>
-      </details>
-      <details>
-        <summary>How do I book?</summary>
-        <p>Book online through <a href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">our secure Square booking page</a>, or email us at <a href="mailto:Partyplayhouseevents@gmail.com">Partyplayhouseevents@gmail.com</a>.</p>
-      </details>
-    </section>
+</section>
 
-    <section id="book" class="section book">
-      <div>
-        <span class="eyebrow">Ready to celebrate?</span>
-        <h2>Start planning your Party Playhouse adventure</h2>
-        <p>Online prebookings are open for dates beginning November 13, 2026. A 50% deposit is collected at booking. Please review the cancellation terms at checkout. Opening remains subject to final approvals.</p>
-      </div>
-      <div class="book-actions">
-        <a class="btn btn-primary big" href="https://app.squareup.com/appointments/book/zh4xvzj4sq69lp/LQY45CV3DRFVD/start" target="_blank" rel="noopener noreferrer">Book Now on Square</a>
-        <a class="btn btn-secondary big" href="https://www.facebook.com/share/1BMGmw6DJ9/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow Us on Facebook</a>
-      </div>
-    </section>
-  </main>
+<section id="interest" class="interest">
 
-  <footer>
-    <img src="assets/logo.jpg" alt="" />
-    <div>
-      <strong>Party Playhouse & Events</strong>
-      <span>838 S Glenstone Ave, Springfield, MO • Planned opening November 13, 2026</span>
-      <a href="mailto:Partyplayhouseevents@gmail.com">Partyplayhouseevents@gmail.com</a>
-      <a href="https://www.facebook.com/share/1BMGmw6DJ9/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow us on Facebook</a>
-    </div>
-    <p>© <span id="year"></span> Party Playhouse & Events. All rights reserved.</p>
-  </footer>
+<p class="eyebrow">Anticipated 2027 launch</p>
 
-  <script src="script.js"></script>
+<h2>Be among the first.</h2>
+
+<p>Something beautiful is in the making. Our upcoming rental collection is currently in development.</p>
+
+<p>Early access inquiries will be free and will not constitute a confirmed booking or require a deposit.</p>
+
+<form>
+
+<label>Full name
+
+<input name="name" autocomplete="name" required>
+
+</label>
+
+<label>Email
+
+<input type="email" name="email" autocomplete="email" required>
+
+</label>
+
+<label>Event date (optional)
+
+<input type="date" name="date">
+
+</label>
+
+<label>Event type
+
+<select name="event">
+
+<option>Wedding</option>
+
+<option>Birthday</option>
+
+<option>Celebration of life</option>
+
+<option>Anniversary</option>
+
+<option>Baby shower</option>
+
+<option>Graduation</option>
+
+<option>Corporate event</option>
+
+<option>Other celebration</option>
+
+</select>
+
+</label>
+
+<label>Experience of interest
+
+<select name="experience">
+
+<option>The Memory Booth</option>
+
+<option>After the Tone</option>
+
+<option>The 360 Experience</option>
+
+<option>The Signature Collection</option>
+
+<option>Multiple experiences</option>
+
+</select>
+
+</label>
+
+<label>Tell us more about your event
+
+<textarea name="details" rows="3"></textarea>
+
+</label>
+
+<button type="button" disabled>Join the priority list — opening soon</button>
+
+<small>Early access registration is not yet open.</small>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="brand">Party Playhouse &amp; Events</div>
+
+<p>Creating moments. Capturing memories.</p>
+
+<p>Springfield, Missouri &amp; surrounding areas</p>
+
+<small>Prelaunch concept · Rental availability and pricing to be announced</small>
+
+</footer>
+
 </body>
+
 </html>
